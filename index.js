@@ -50,7 +50,7 @@ client.on('message', async (topic, message) => {
 
     // 3. SEND TO YOUR EXISTING NEXT.JS API
     // Replace this URL with your actual deployed Vercel Next.js URL
-    const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://kneura-sense.vercel.app/';
+    const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://kneura-sense-koa.vercel.app/';
 
     await fetch(API_URL, {
       method: 'POST',
