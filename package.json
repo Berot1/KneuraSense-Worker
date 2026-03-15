@@ -11,9 +11,17 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+    "axios": "^1.13.6",
     "dotenv": "^17.3.1",
     "express": "^5.2.1",
-    "mqtt": "^5.15.0",
-    "node-fetch": "^3.3.2"
-  }
+    "mqtt": "^5.15.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Berot1/KneuraSense-Worker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Berot1/KneuraSense-Worker/issues"
+  },
+  "homepage": "https://github.com/Berot1/KneuraSense-Worker#readme"
 }
