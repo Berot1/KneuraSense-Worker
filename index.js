@@ -17,15 +17,15 @@ app.listen(PORT, () => {
 });
 
 // 2. MQTT BACKGROUND LISTENER
-const MQTT_HOST = 'd74c9cedfa0e44efa6fbbc6a42bef453.s1.eu.hivemq.cloud';
-const MQTT_PORT = 8883; 
-const MQTT_USER = 'KneuraSense-esp32';
-const MQTT_PASS = 'Kneurasense123';
+const mqttHost = process.env.MQTT_HOST;
+const mqttPort = process.env.MQTT_PORT;
+const mqttUser = process.env.MQTT_USER;
+const mqttPassword = process.env.MQTT_PASS;
 
-const client = mqtt.connect(`mqtts://${MQTT_HOST}:${MQTT_PORT}`, {
+const client = mqtt.connect(`mqtts://${mqttHost}:${mqttPort}`, {
   clientId: 'server_worker_' + Math.random().toString(16).substring(2, 8),
-  username: MQTT_USER,
-  password: MQTT_PASS,
+  username: mqttUser,
+  password: mqttPassword,
   clean: true,
   reconnectPeriod: 2000,
 });
