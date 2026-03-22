@@ -58,7 +58,7 @@ KneuraSense Worker operates in a **three-tier distributed architecture**:
                            ┌───────────▼────────────┐
                            │   HiveMQ MQTT Broker   │
                            │ (Persistent Messaging) │
-                           └────────────┬────────────┘
+                           └────────────┬───────────┘
                                         │
                                         │ Subscribe: esp32/+/data
                                         │ (Topic pattern matching)
